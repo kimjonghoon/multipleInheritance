@@ -8,13 +8,9 @@ public class Test {
 		C1Class c1 = new C1Class();
 		System.out.println(c1.hello());
 		
-		//2. Sub interface wins
+		//2. Sometimes, you must explicitly override the default method you choose and call it. 
 		C2Class c2 = new C2Class();
 		System.out.println(c2.hello());
-		
-		//3. Sometimes, you should explicitly override and call the default method.
-		C3Class c3 = new C3Class();
-		System.out.println(c3.hello());
 	}
 
 }
